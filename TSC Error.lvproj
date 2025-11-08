@@ -21,6 +21,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Custom Error Template.vit" Type="VI" URL="../Custom Error Template.vit"/>
 		<Item Name="TSC Error.lvlib" Type="Library" URL="../TSC Error.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
