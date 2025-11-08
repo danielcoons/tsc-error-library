@@ -1,5 +1,9 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Library LVVersion="19008000">
+	<Property Name="NI.Lib.Description" Type="Str">Provides the TSC Error library namespace to the shared code to handle errors in an application. 
+
+-&gt;also allows for build into ppl if necessary for a project</Property>
+	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">'1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)6!!!*Q(C=\&gt;4"54*"%-8RJ_8"+RF9J0"3)!5/*N!J=06)#JU#+:"#JU!+J)$`(6N%$Y+FFBS=`990XOTU`*S&gt;7GGU?_F/BX0N]&gt;.WU@B5:61[^-`8&lt;[`D,`XQ]?.N`O0*`*@RL]V`FR[,8/L`VPC:JP`WX`[W0:U^J,^_:G]UP9DI25^[U+VJK5/2&amp;XG2&amp;XG2&amp;XG3*XG3*XG3*XG1"XG1"XG1"\H*47ZSEZP=Z/-C&amp;\H)21[J7,R9K#B;&amp;#BOBK,CI`!5HM*4?0CJQF.Y#E`B+4T=IM*4?!J0Y3E]4&amp;0B+4S&amp;J`!5(EI.39W,(%`BI&lt;Q34_**0)EH]&lt;#E%E]#3":,#C&gt;&amp;9#A:4,YEHM34?0CKR*.Y%E`C34Q-+`%EHM34?")05];OZ."-&amp;TE?SCDQ"*\!%XA#$[56?!*0Y!E]A9@F&amp;(A#4Y!)&amp;AS+1V!Q+&lt;AB_"&amp;Y!A``+@!%HM!4?!)01_-*R&gt;C:34.&gt;Z(C-RXC-RXC-BR)S(O-R(O-R(ML+?)T(?)T(?&amp;B+RG-]RG-A:F'7FSFG*JK&lt;4'!]`"OHR?-JZ:"Y8&amp;)@8P7B6"]W^3&amp;3(Q\V1V=`406$5G__?F06G[8?"05@JU;L-?J&amp;V*/H'\8H=U@@UD@U.8V&amp;8^)8^$F^.EX^Y2PX_\VWOZWWW[UWGYX7[\67KZ77S[57CY8G]\FGM^HR.@$!&gt;8QB8-.\[3I-NTKNSRY^![-3V9)!!!!!</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">419463168</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
