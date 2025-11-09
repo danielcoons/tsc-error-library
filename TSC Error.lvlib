@@ -28,7 +28,9 @@
 		<Item Name="Error Get Queue Ref.vi" Type="VI" URL="../_SubVIs/Error Get Queue Ref.vi"/>
 	</Item>
 	<Item Name="Error.lvclass" Type="LVClass" URL="../_Messages/Error/Error.lvclass"/>
+	<Item Name="Clear Array of Specific Errors.vi" Type="VI" URL="../Clear Array of Specific Errors.vi"/>
 	<Item Name="Clear Specific Error.vi" Type="VI" URL="../Clear Specific Error.vi"/>
+	<Item Name="Clear Specific Errors.vi" Type="VI" URL="../Clear Specific Errors.vi"/>
 	<Item Name="Custom UUT Errors.vi" Type="VI" URL="../Custom UUT Errors.vi"/>
 	<Item Name="Error Loop.vi" Type="VI" URL="../Error Loop.vi"/>
 	<Item Name="Handle Errors.vi" Type="VI" URL="../Handle Errors.vi"/>

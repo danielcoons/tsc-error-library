@@ -1,0 +1,67 @@
+== ERROR_Init.lvclass
+
+*Responsibility:*
++++Initialize the shifted error information to begin an application with the basic information populated.+++
+
+
+*Version:* 1.0.0.1
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "TSC Error.lvlib:ERROR_Init" {
+{method} -Execute()
+
+}
+"TSC Error.lvlib:Error" <|-- "TSC Error.lvlib:ERROR_Init"
+
+
+
+@enduml
+....
+
+.Functions
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Connector pane |Description |S. |R. |I.
+
+|Execute
+|image:TSC_Error.lvlib_ERROR_Init.lvclass_Execute.vi.png[TSC Error.lvlib:ERROR_Init.lvclass:Execute.vi]
+|+++This Message sets original parameters for the update queue, the error log, and the location of the application's custom error code file.+++
+
++++Inputs:+++
++++-Error in [obj] - the dynamic dispatch input class+++
++++-Shifted Error in [obj] - the shifted error class with shared information+++
++++-error in+++
+
++++Outputs:+++
++++-Error out [obj] - the dynamic dispatch output class+++
++++-Shifted Error in [obj] - the shifted error class with shared information+++
++++-STOP? [Boolean] - the output Boolean used to stop the Error Loop+++
++++-error out+++
+
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++Phone: 812 558-7100+++
++++www.tsc.com\atcs+++
+
+|image:scope-private.png[scope-private.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community | image:scope-private.png[] -> Private
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined

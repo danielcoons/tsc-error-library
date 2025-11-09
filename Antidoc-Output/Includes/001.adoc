@@ -1,0 +1,308 @@
+== TSC Error.lvlib
+
+*Responsibility:*
++++Provides the TSC Error library namespace to the shared code to handle errors in an application. +++
+
++++->also allows for build into ppl if necessary for a project+++
+
+
+*Version:* 1.0.0.0
+
+.Nested libraries
+[cols="", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Type
+
+|<<ERROR_Add UUT Error.lvclass>>
+|LVClass
+
+|<<ERROR_Init.lvclass>>
+|LVClass
+
+|<<ERROR_Prompt.lvclass>>
+|LVClass
+
+|<<ERROR_Stop.lvclass>>
+|LVClass
+
+|<<ERROR_Write.lvclass>>
+|LVClass
+
+|<<Error.lvclass>>
+|LVClass
+|===
+
+.Functions
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Connector pane |Description |S. |R. |I.
+
+|Error Create Queue
+|image:TSC_Error.lvlib_Error_Create_Queue.vi.png[TSC Error.lvlib:Error Create Queue.vi]
+|+++This VI will obtain a reference to the TSC Error Queue.  If has not already been created, it will create the Queue.+++
+
++++Inputs:+++
++++-error in+++
+
++++Outputs:+++
++++-Error out [obj] - the error class output+++
++++-Error Queue out [Queue Ref] - a reference to the Error queue+++
++++-error out+++
+
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++www.tsc.com\atcs+++
+
+|image:scope-private.png[scope-private.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Error Dequeue
+|image:TSC_Error.lvlib_Error_Dequeue.vi.png[TSC Error.lvlib:Error Dequeue.vi]
+|+++This VI will handle dequeing messages from the Error Queue.+++
+
++++Inputs:+++
++++-Error Queue in [Queue reference] - the Error Queue+++
++++-error in+++
+
++++Outputs:+++
++++-Error Message [obj] - the dynamic dispatch output class message+++
++++-error out+++
+
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++www.tsc.com\acts+++
+
+|image:scope-private.png[scope-private.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Error Enqueue
+|image:TSC_Error.lvlib_Error_Enqueue.vi.png[TSC Error.lvlib:Error Enqueue.vi]
+|+++Send an error message.+++
+
++++Inputs:+++
++++-Error Message in [obj] - the dynamic dispatch input class that will be queued to the Error Loop+++
++++-error in+++
+
++++Outputs:+++
++++-Error Message out [obj] - the dynamic dispatch class that was queued to the Error Loop+++
++++-error out+++
+
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++www.tsc.com\atcs+++
+
+|image:scope-private.png[scope-private.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Error Get Queue Ref
+|image:TSC_Error.lvlib_Error_Get_Queue_Ref.vi.png[TSC Error.lvlib:Error Get Queue Ref.vi]
+|+++This VI will obtain a reference to the TSC Error Queue.  +++
+
++++Inputs:+++
++++-error in+++
+
++++Outputs:+++
++++-Error out [obj] - the error class output+++
++++-Error Queue out [Queue Ref] - a reference to the Error queue+++
++++-error out+++
+
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++www.tsc.com\atcs+++
+
+|image:scope-private.png[scope-private.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Clear Array of Specific Errors
+|image:TSC_Error.lvlib_Clear_Array_of_Specific_Errors.vi.png[TSC Error.lvlib:Clear Array of Specific Errors.vi]
+|+++This VI will clear a the error cluster if any in the array are on the error input.+++
+
++++Inputs:+++
++++-Error Codes [array of I32] - the error codes to compare to and clear if it is the existing error+++
++++-error in+++
+
++++Outputs:+++
++++-error out+++
+
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++www.tsc.com/atcs+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Clear Specific Error
+|image:TSC_Error.lvlib_Clear_Specific_Error.vi.png[TSC Error.lvlib:Clear Specific Error.vi]
+|+++This VI will clear a specific error code if that is the error on the wire.+++
+
++++Inputs:+++
++++-Error Code [I32] - the error code to compare to and clear if it is the existing error+++
++++-error in+++
+
++++Outputs:+++
++++-error out+++
+
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++www.tsc.com/atcs+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Custom UUT Errors
+|image:TSC_Error.lvlib_Custom_UUT_Errors.vi.png[TSC Error.lvlib:Custom UUT Errors.vi]
+|+++Use this VI to set the path to a custom error file for a Unit Under Test (UUT).+++
+
++++Inputs:+++
++++-UUT Error File [path] - the path to the UUT's custom error code definition file+++
++++-error in+++
+
++++Outputs:+++
++++-error out+++
+
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++Phone: 812 558-7100+++
++++www.tsc.com\atcs+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Error Loop
+|image:TSC_Error.lvlib_Error_Loop.vi.png[TSC Error.lvlib:Error Loop.vi]
+|+++This loop runs in the top-level VI to handle Errors as they occur and will address them via Object Oriented code.+++
+
++++<b>Note:</b> this should be a top-level loop running in parallel with the rest of the application+++
+
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++www.tsc.com\atcs+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Handle Errors
+|image:TSC_Error.lvlib_Handle_Errors.vi.png[TSC Error.lvlib:Handle Errors.vi]
+|+++This VI will handle errors in the application and is to be used after any loop where errors may exist. +++
+
++++Inputs:+++
++++-error in (no error)+++
++++-Prompt? (T) [Boolean] - this will prompt the user if set to TRUE; some cases, it is desired to not prompt the user+++
+
++++Outputs:+++
++++-error out+++
+
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++Phone: 812 558-7100+++
++++www.tsc.com\atcs+++
+
+|image:empty.png[empty.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:empty.png[empty.png]
+
+|Init Error Loop
+|image:TSC_Error.lvlib_Init_Error_Loop.vi.png[TSC Error.lvlib:Init Error Loop.vi]
+|+++Use this VI to set up the Error Loop Queue and initialize certain inputs.+++
+
++++Inputs:+++
++++-Update Queue [queue ref] - this API will use a Queue with a cluster of string (message) and variant (data) to send a message to prompt the user if desired+++
++++-Error Log [path] - the file path to the application's error log (if empty, will default to error.txt at the top level)+++
++++-Application Errors [path] - the file path for custom errors for the application if applicable+++
++++-Max File Size [I64] - define the maximum error log file size so that it doesn't grow indefinitely+++
++++-error in+++
+
++++Outputs:+++
++++-error out+++
+
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++www.tsc.com\atcs+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Insert Error
+|image:TSC_Error.lvlib_Insert_Error.vi.png[TSC Error.lvlib:Insert Error.vi]
+|+++This VI will add an error to the error wire.  This is an easy way to set a custom error in the application.+++
+
++++Inputs:+++
++++-Error Code [I32] - the error code to insert+++
++++-error in+++
+
++++Outputs:+++
++++-error out+++
+
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++www.tsc.com\atcs+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Stop Error Loop
+|image:TSC_Error.lvlib_Stop_Error_Loop.vi.png[TSC Error.lvlib:Stop Error Loop.vi]
+|+++This VI will send the stop message to the error loop.+++
+
++++<b>Note:</b> this should be called as a way to finish the error loop in the application and should be called when it is time to shut down+++
+
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++www.tsc.com\atcs+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community | image:scope-private.png[] -> Private
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined

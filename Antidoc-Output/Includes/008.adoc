@@ -1,0 +1,404 @@
+== Error.lvclass
+
+*Responsibility:*
++++The parent class for the TSC Error Handling library.+++
+
+
+*Version:* 1.0.0.1
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "TSC Error.lvlib:Error" {
+{field} ~Error : Error Cluster
+{field} ~Error Log : Path
+{field} ~Update Queue : NoType
+{field} ~UUT Errors : Path
+{field} ~Application Errors : Path
+{field} ~Max File Size : I64
+{method} +Execute()
+
+}
+
+
+
+@enduml
+....
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Connector pane |Description |S. |R. |I.
+
+|Read Max File Size
+|image:TSC_Error.lvlib_Error.lvclass_Read_Max_File_Size.vi.png[TSC Error.lvlib:Error.lvclass:Read Max File Size.vi]
+|No description found (add content in vi description)
+|image:scope-community.png[scope-community.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Write Max File Size
+|image:TSC_Error.lvlib_Error.lvclass_Write_Max_File_Size.vi.png[TSC Error.lvlib:Error.lvclass:Write Max File Size.vi]
+|No description found (add content in vi description)
+|image:scope-community.png[scope-community.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Read Error
+|image:TSC_Error.lvlib_Error.lvclass_Read_Error.vi.png[TSC Error.lvlib:Error.lvclass:Read Error.vi]
+|+++Data Member Access to read the error.+++
+
++++Inputs:+++
++++-Error in [obj] - the dynamic dispatch input class+++
++++-error in+++
+
++++Outputs:+++
++++-Error out [obj] - the dynamic dispatch output class+++
++++-Error [error cluster] - the data member access output+++
++++-error out+++
++++________________________________________________________________________________+++
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++Phone: 812 558-7100+++
++++daniel.coons@tsc.com+++
++++www.tsc.com+++
+
++++<b>Date Created:</b>  11 AUG 2014+++
++++<b>Date Updated:</b>  +++
+
+|image:scope-community.png[scope-community.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write Error
+|image:TSC_Error.lvlib_Error.lvclass_Write_Error.vi.png[TSC Error.lvlib:Error.lvclass:Write Error.vi]
+|+++Data Member Access to write the error.+++
+
++++Inputs:+++
++++-Error in [obj] - the dynamic dispatch input class+++
++++-Error [error cluster] - the data member access input+++
++++-error in+++
+
++++Outputs:+++
++++-Error out [obj] - the dynamic dispatch output class+++
++++-error out+++
++++________________________________________________________________________________+++
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++Phone: 812 558-7100+++
++++daniel.coons@tsc.com+++
++++www.tsc.com+++
+
++++<b>Date Created:</b>  11 AUG 2014+++
++++<b>Date Updated:</b>  +++
+
+|image:scope-community.png[scope-community.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read Update Queue
+|image:TSC_Error.lvlib_Error.lvclass_Read_Update_Queue.vi.png[TSC Error.lvlib:Error.lvclass:Read Update Queue.vi]
+|+++Data Member Access to read the update queue reference.+++
+
++++Inputs:+++
++++-Error in [obj] - the dynamic dispatch input class+++
++++-error in+++
+
++++Outputs:+++
++++-Error out [obj] - the dynamic dispatch output class+++
++++-Update Queue [queue reference] - the update queue's reference output+++
++++-error out+++
++++________________________________________________________________________________+++
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++Phone: 812 558-7100+++
++++daniel.coons@tsc.com+++
++++www.tsc.com+++
+
++++<b>Date Created:</b> 04 APR 2016+++
++++<b>Date Updated:</b>  +++
+
+|image:scope-community.png[scope-community.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Write Update Queue
+|image:TSC_Error.lvlib_Error.lvclass_Write_Update_Queue.vi.png[TSC Error.lvlib:Error.lvclass:Write Update Queue.vi]
+|+++Data Member Access to write the update queue reference.+++
+
++++Inputs:+++
++++-Error in [obj] - the dynamic dispatch input class+++
++++-Update Queue [queue reference] - the update queue's reference input+++
++++-error in+++
+
++++Outputs:+++
++++-Error out [obj] - the dynamic dispatch output class+++
++++-error out+++
++++________________________________________________________________________________+++
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++Phone: 812 558-7100+++
++++daniel.coons@tsc.com+++
++++www.tsc.com+++
+
++++<b>Date Created:</b> 04 APR 2016+++
++++<b>Date Updated:</b>  +++
+
+|image:scope-community.png[scope-community.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Read Error Log
+|image:TSC_Error.lvlib_Error.lvclass_Read_Error_Log.vi.png[TSC Error.lvlib:Error.lvclass:Read Error Log.vi]
+|+++Data Member Access to read the location of the error log.+++
+
++++Inputs:+++
++++-Error in [obj] - the dynamic dispatch input class+++
++++-error in+++
+
++++Outputs:+++
++++-Error out [obj] - the dynamic dispatch output class+++
++++-Error Log [path] - the data member access output+++
++++-error out+++
++++________________________________________________________________________________+++
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++Phone: 812 558-7100+++
++++daniel.coons@tsc.com+++
++++www.tsc.com+++
+
++++<b>Date Created:</b> 04 APR 2016+++
++++<b>Date Updated:</b>  +++
+
+|image:scope-community.png[scope-community.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Write Error Log
+|image:TSC_Error.lvlib_Error.lvclass_Write_Error_Log.vi.png[TSC Error.lvlib:Error.lvclass:Write Error Log.vi]
+|+++Data Member Access to write the location of the error log.+++
+
++++Inputs:+++
++++-Error in [obj] - the dynamic dispatch input class+++
++++-Error Log [path] - the data member access input+++
++++-error in+++
+
++++Outputs:+++
++++-Error out [obj] - the dynamic dispatch output class+++
++++-error out+++
++++________________________________________________________________________________+++
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++Phone: 812 558-7100+++
++++daniel.coons@tsc.com+++
++++www.tsc.com+++
+
++++<b>Date Created:</b> 04 APR 2016+++
++++<b>Date Updated:</b>  +++
+
+|image:scope-community.png[scope-community.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Read UUT Errors
+|image:TSC_Error.lvlib_Error.lvclass_Read_UUT_Errors.vi.png[TSC Error.lvlib:Error.lvclass:Read UUT Errors.vi]
+|+++Data Member Access to read the location for the UUT's custom error file.+++
+
++++Inputs:+++
++++-Error in [obj] - the dynamic dispatch input class+++
++++-error in+++
+
++++Outputs:+++
++++-Error out [obj] - the dynamic dispatch output class+++
++++-UUT Errors [path] - the data member access output+++
++++-error out+++
++++________________________________________________________________________________+++
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++Phone: 812 558-7100+++
++++daniel.coons@tsc.com+++
++++www.tsc.com+++
+
++++<b>Date Created:</b> 04 APR 2016+++
++++<b>Date Updated:</b>  +++
+
+|image:scope-community.png[scope-community.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Write UUT Errors
+|image:TSC_Error.lvlib_Error.lvclass_Write_UUT_Errors.vi.png[TSC Error.lvlib:Error.lvclass:Write UUT Errors.vi]
+|+++Data Member Access to write the location for the UUT's custom error file.+++
+
++++Inputs:+++
++++-Error in [obj] - the dynamic dispatch input class+++
++++-UUT Errors [path] - the data member access input+++
++++-error in+++
+
++++Outputs:+++
++++-Error out [obj] - the dynamic dispatch output class+++
++++-error out+++
++++________________________________________________________________________________+++
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++Phone: 812 558-7100+++
++++daniel.coons@tsc.com+++
++++www.tsc.com+++
+
++++<b>Date Created:</b> 04 APR 2016+++
++++<b>Date Updated:</b>  +++
+
+|image:scope-community.png[scope-community.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Read Application Errors
+|image:TSC_Error.lvlib_Error.lvclass_Read_Application_Errors.vi.png[TSC Error.lvlib:Error.lvclass:Read Application Errors.vi]
+|+++Data Member Access to read the location for the custom errors of the application.+++
+
++++Inputs:+++
++++-Error in [obj] - the dynamic dispatch input class+++
++++-error in+++
+
++++Outputs:+++
++++-Error out [obj] - the dynamic dispatch output class+++
++++-Application Errors [path] - the data member access output+++
++++-error out+++
++++________________________________________________________________________________+++
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++Phone: 812 558-7100+++
++++daniel.coons@tsc.com+++
++++www.tsc.com+++
+
++++<b>Date Created:</b> 04 APR 2016+++
++++<b>Date Updated:</b>  +++
+
+|image:scope-community.png[scope-community.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Write Application Errors
+|image:TSC_Error.lvlib_Error.lvclass_Write_Application_Errors.vi.png[TSC Error.lvlib:Error.lvclass:Write Application Errors.vi]
+|+++Data Member Access to write the location for the custom errors of the application.+++
+
++++Inputs:+++
++++-Error in [obj] - the dynamic dispatch input class+++
++++-Application Errors [path] - the data member access input+++
++++-error in+++
+
++++Outputs:+++
++++-Error out [obj] - the dynamic dispatch output class+++
++++-error out+++
++++________________________________________________________________________________+++
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++Phone: 812 558-7100+++
++++daniel.coons@tsc.com+++
++++www.tsc.com+++
+
++++<b>Date Created:</b> 04 APR 2016+++
++++<b>Date Updated:</b>  +++
+
+|image:scope-community.png[scope-community.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Read Custom Errors
+|image:TSC_Error.lvlib_Error.lvclass_Read_Custom_Errors.vi.png[TSC Error.lvlib:Error.lvclass:Read Custom Errors.vi]
+|+++This VI reads the custom error codes form the Error Codes.cfg configuration file.  This file has a list of defined errors specified by the project.+++
+
++++Inputs:+++
++++-error in (no error)+++
+
++++Outputs:+++
++++-Error Messages [array of strings] - the custom error messages+++
++++-Error Codes [array of I32's] - the custom error codes+++
++++-error out+++
++++________________________________________________________________________________+++
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++Phone: 812 558-7100+++
++++daniel.coons@tsc.com+++
++++www.tsc.com+++
+
++++<b>Date Created:</b>  12 AUG 2014+++
++++<b>Date Updated:</b>  +++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Execute
+|image:TSC_Error.lvlib_Error.lvclass_Execute.vi.png[TSC Error.lvlib:Error.lvclass:Execute.vi]
+|+++This VI is the template and required override for all Error messages.+++
+
++++Inputs:+++
++++-Error in [obj] - the dynamic dispatch input class+++
++++-Shifted Error in [obj] - the shifted error class with shared information+++
++++-error in+++
+
++++Outputs:+++
++++-Error out [obj] - the dynamic dispatch output class+++
++++-Shifted Error in [obj] - the shifted error class with shared information+++
++++-STOP? [Boolean] - the output Boolean used to stop the Error Loop+++
++++-error out+++
+
++++<b>Code Developed By:</b>+++
++++Daniel Coons+++
++++Technology Service Corporation+++
++++1983 S Liberty Drive+++
++++Bloomington, IN 47403+++
++++Phone: 812 558-7100+++
++++www.tsc.com/atcs+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
