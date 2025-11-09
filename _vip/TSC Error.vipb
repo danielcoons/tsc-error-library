@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2025-11-08 18:27:57" Modified_Date="2025-11-08 21:59:08" Creator="Daniel Coons" Comments="" ID="1c4d051b6d58b5c78a5e38aafec706ca">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2025-11-08 18:27:57" Modified_Date="2025-11-08 22:05:21" Creator="Daniel Coons" Comments="" ID="4cc0044da29d60ff0d0a72c456c4140a">
   <Library_General_Settings>
     <Package_File_Name>TSC_lib_TSC_Error</Package_File_Name>
-    <Library_Version>1.1.0.1</Library_Version>
+    <Library_Version>1.1.0.2</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -342,7 +342,7 @@ A template is provided to define a custom error constant as a --error.vi functio
         <Path>..\Custom Error Template.vit</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>8C3706381BC0D0F65BDBF885FE8B984A</GUID>
+      <GUID>83AA3C6FB481BE3DA8895AEBD2C10D03</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
