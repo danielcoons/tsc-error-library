@@ -27,9 +27,9 @@ Init Error Loop - is using all three optional inputs
 
 `Data` = a string containing the error message
 
-    Giving a reference to a queue is so that the application can handle prompting the user in the desired format/method; in this example the message would go to the UI Update Loop which could respond to the "ERROR-Prompt" message in a developer-defined way. 
-    
-    Often handling includes letting the user know that the error has occurred and giving an opportunity to safely shut down or continue with program execution.
+Giving a reference to a queue is so that the application can handle prompting the user in the desired format/method; in this example the message would go to the UI Update Loop which could respond to the `ERROR-Prompt` message in a developer-defined way. 
+
+Often handling includes letting the user know that the error has occurred and giving an opportunity to safely shut down or continue with program execution.
 
 `Error Log` - a path to the output error log file (all global errors are logged automatically); if this is undefined, it will be created in "error.txt" at the application directory
 
