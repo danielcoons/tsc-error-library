@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2025-11-08 18:27:57" Modified_Date="2025-11-08 22:05:21" Creator="Daniel Coons" Comments="" ID="4cc0044da29d60ff0d0a72c456c4140a">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2025-11-08 18:27:57" Modified_Date="2025-11-09 07:53:00" Creator="Daniel Coons" Comments="" ID="5ed41ee890dcc0ed37fcdfaf7497ee1d">
   <Library_General_Settings>
     <Package_File_Name>TSC_lib_TSC_Error</Package_File_Name>
-    <Library_Version>1.1.0.2</Library_Version>
+    <Library_Version>1.1.0.3</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -38,7 +38,8 @@ A template is provided to define a custom error constant as a --error.vi functio
       <URL>https://github.com/danielcoons/tsc-error-library</URL>
       <Release_Notes>v1.1
 -Updated documentation to prepare for public release
--Included Max File Size definition so that log file does not grow indefinitely</Release_Notes>
+-Included Max File Size definition so that log file does not grow indefinitely
+-Updated vit (custom error VI) to place contents -&gt; would be done in a blank VI</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -333,7 +334,7 @@ A template is provided to define a custom error constant as a --error.vi functio
         <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>Custom Error Template.vit</NameSub_Menu_Name>
         <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
+        <is_Merge_VI>true</is_Merge_VI>
         <Position>
           <Row>2</Row>
           <Column>3</Column>
@@ -342,7 +343,7 @@ A template is provided to define a custom error constant as a --error.vi functio
         <Path>..\Custom Error Template.vit</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>83AA3C6FB481BE3DA8895AEBD2C10D03</GUID>
+      <GUID>806015790C2C6FFC70FE7EB4013E6A71</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
