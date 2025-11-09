@@ -1,0 +1,4 @@
+== Project description
+
++++The TSC Error Library provides a reusable way to centrally handle errors in a LabVIEW application with prompting and reporting capabilities. +++
+
