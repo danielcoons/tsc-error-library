@@ -1,6 +1,8 @@
 # tsc-error-library
 The TSC Error Library is a common error handling approach that can be utilized in LabVIEW-based applications.
 
+Find the VIP here: [![Image](https://www.vipm.io/package/tsc_lib_tsc_error/badge.svg?metric=installs)](https://www.vipm.io/package/tsc_lib_tsc_error/) [![Image](https://www.vipm.io/package/tsc_lib_tsc_error/badge.svg?metric=stars)](https://www.vipm.io/package/tsc_lib_tsc_error/)
+
 Software is going to have errors. `Local Error Handling` means handling the error at the place in code where it may occur. `Global Error Handling` is for those errors that are unknown and may pop up intermittently or at any point because of some issue.
 
 These functions are meant to handle `Global Errors` that don't have a local solution or are not known at the current release.
